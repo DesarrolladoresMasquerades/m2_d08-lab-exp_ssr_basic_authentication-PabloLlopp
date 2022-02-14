@@ -5,7 +5,7 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
-router.route('/main')
+router.route('/main') 
 .get((req, res)=>{
   const userIsLoggedIn = req.session.currentUserId;
   if(userIsLoggedIn) res.render('main');
